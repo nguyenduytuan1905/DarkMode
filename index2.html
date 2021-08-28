@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="2.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+     <!-- box content -->
+      <div class="wrapper">
+        <div class="box">
+          <h1 class="title">Toggle Dark Mode</h1>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor tenetur maiores
+            delectus odio quianesciunt obcaecati explicabo repellendus similique neque.
+          </p>
+        </div>
+      </div>
+      <!-- theme toggle button -->
+      <div id="toggleBtn"></div>
+
+  <script>
+        window.onload = function () {
+          const themeBtn = document.getElementById('toggleBtn');
+          themeBtn.addEventListener('click',function () {
+            document.body.classList.toggle('darkmode-active');
+
+            this.classList.toggle('active');
+          })
+        }
+  </script>
+  </body>
+</html>
